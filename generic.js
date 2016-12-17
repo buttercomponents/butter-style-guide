@@ -5,26 +5,26 @@ $(document).ready(function(){
         var activePadLeft = parseFloat($(activeNav).css('padding-left'));
         var activePadRight = parseFloat($(activeNav).css('padding-right'));
         var totalWidth = activewidth + activePadLeft + activePadRight;
-        
+
         var precedingAnchorWidth = anchorWidthCounter();
-        
-        // TODO: 
+
+        // TODO:
         // Find the total widths of all of the anchors
         // to the left of the active anchor.
 
         var activeMarker = $('.active-marker');
         $(activeMarker).css('display','block');
-        
+
         $(activeMarker).css('width', totalWidth);
 
         $(activeMarker).css('left', precedingAnchorWidth);
-        
-        // TODO: 
+
+        // TODO:
         // Using the calculated total widths of preceding anchors,
         // Set the left: css value to that number.
     }
     moveMarker();
-    
+
     function anchorWidthCounter() {
         var anchorWidths = 0;
         var a;
@@ -50,14 +50,14 @@ $(document).ready(function(){
 
         return anchorWidths;
     }
-    
+
     $('.app-menu a').click(function(e) {
         e.preventDefault();
         $('.app-menu li').removeClass('active');
         $(this).parents('li').addClass('active');
         moveMarker();
     });
-    
+
     //simulate loading the cover
     function runExample(){
         setTimeout(function () {
@@ -74,9 +74,20 @@ $(document).ready(function(){
                     $(this).remove();
                 });
             }
-            
+
             runExample();
         }, 5000);
     }
     runExample();
+
+    //open dropdown
+    $('#button').click(function () {
+        $('.subtitles').toggleClass('active');
+    });
+
+    //select language
+    $('.item').click(function () {
+        $('#list').toggleClass('active');
+    });
+
 });

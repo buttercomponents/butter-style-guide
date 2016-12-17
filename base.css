@@ -475,3 +475,97 @@ nav.app-menu.shows-menu .active-marker {
         background-position: 368px 0;
     }
 }
+/**
+ * Dropdown
+ */
+
+.subtitles {
+    position: relative;
+    display: inline-block;
+}
+
+.subtitles .dropdown {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: left;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+    list-style: none;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.subtitles.active .dropdown {
+    opacity: 100;
+    bottom: 150%;
+}
+
+.subtitles .dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+}
+
+.subtitles .dropdown .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    width: 100px;
+    margin: 0;
+    color: #bbb;
+    border-left: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.subtitles .dropdown .item.active {
+    border-left: 4px solid #FF1744;
+}
+
+.subtitles .dropdown .item:hover {
+    border-left: 4px solid #FF1744;
+    background: rgba(50, 50, 50, 0.5);
+    color: #FFF;
+}
+
+.subtitles .slider #list {
+    transform: translateX(0px);
+    display: block;
+    white-space: nowrap;
+    width: 123px;
+    transition: all 0.3s;
+}
+
+.subtitles #list.active{
+    transform: translateX(-127px);
+}
+
+.subtitles .slider {
+    overflow: hidden;
+}
+
+.subtitles .menu, .subtitles  .sub-menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitles #button {
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #fff;
+}
+
+.subtitles.active #button {
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #FF1744;
+}
