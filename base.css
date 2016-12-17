@@ -298,22 +298,33 @@ nav.app-menu.shows-menu .active-marker {
  */
 .card {
     background-color: #191c28;
-    height: 258px;
+    height: 265px;
     width: 150px;
-    margin: 0 5px 10px;
+    margin: 0 5px 20px 5px;
     float: left;
     cursor: pointer;
     font-size: 0;
 }
-.card img{
-    width: 100%;
+.card img {
+    width: 150px;
+    height: 226px;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
-    border-radius: 3px;
+    border-radius: 10px;
     position: relative;
 }
+
+.card:hover img{
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.6);
+}
+
+.card:hover .item-title {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
 .card .item-title {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
+    letter-spacing: 1px;
     line-height: 17px;
     color: #FFFFFF;
     margin-top: 4px;
@@ -341,12 +352,13 @@ nav.app-menu.shows-menu .active-marker {
     margin: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(-139deg, rgba(255,23,218,0.39) 0%, rgba(255,23,67,0.59) 100%);
+    background-image: linear-gradient(-139deg, rgba(255,23,218,0.60) 0%, rgba(255,23,67,0.60) 100%);
     opacity: 0;
     transition: all .3s ease-in-out;
+    border-radius: 10px
 }
 .play-icon{
-    color: #ffffff;
+    color: #FFF;
     font-size: 70px;
     z-index: 3;
     position: absolute;
