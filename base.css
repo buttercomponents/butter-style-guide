@@ -389,6 +389,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     left: calc( 50% - 35px );
     opacity: 0;
     transition: all .3s ease-in-out;
+    text-shadow: 0 0px 8px rgba(0,0,0,0.4);
 }
 .fav-icon {
         color: #ffffff;
