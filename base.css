@@ -209,6 +209,7 @@ nav.app-menu li {
     font-weight: bold;
     line-height: 28px;
     opacity: 0.4;
+    text-transform: uppercase;
 }
 nav.app-menu li.active {
     opacity: 1;
@@ -230,11 +231,11 @@ nav.app-menu li a {
     transition: all .2s ease;
 }
 nav.app-menu li a:hover {
-    border-bottom-color: #FF3B30;
+    border-bottom-color: #FFF;
     opacity: 0.8;
 }
 nav.app-menu .active-marker {
-    background: #FF3B30;
+    background: #FF1744;
     bottom: 0;
     display: none;
     height: 3px;
@@ -454,9 +455,11 @@ nav.app-menu.shows-menu .active-marker {
 .card__inner div:nth-child(4) {
     height: 6px;
     width: 100%;
-    bottom: 39px;
+    bottom: 33px;
     left: 0;
 }
+
+
 
 @-webkit-keyframes shimmer {
     0% {
