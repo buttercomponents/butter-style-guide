@@ -1,34 +1,34 @@
 $(document).ready(function(){
-    function moveMarker() {
-        var activeNav = $('.active a');
+    function moveMarker(nav) {
+        var activeNav = $(nav + ' .active a');
         var aWidth =  $(activeNav).width();
-        var precedingAnchorWidth =  anchorWidthCounter();
+        var precedingAnchorWidth =  anchorWidthCounter(nav);
 
         // TODO:
         // Find the total widths of all of the anchors
         // to the left of the active anchor.
 
-        var activeMarker = $('.active-marker');
+        var activeMarker = $(nav + ' .active-marker');
         $(activeMarker).css('display','block');
-
         $(activeMarker).css('width', aWidth);
-
         $(activeMarker).css('left', precedingAnchorWidth);
 
         // TODO:
         // Using the calculated total widths of preceding anchors,
         // Set the left: css value to that number.
     }
-    moveMarker();
 
-    function anchorWidthCounter() {
+    moveMarker('.main-menu');
+    moveMarker('.shows-menu');
+
+    function anchorWidthCounter(nav) {
         var anchorWidths = 0;
         var a;
         var aWidth;
         var aMarginLeft;
         var aMarginRight;
         var aTotalWidth;
-        $('.app-menu li').each(function(index, elem) {
+        $(nav + ' li').each(function(index, elem) {
             var activeTest = $(elem).hasClass('active');
             if(activeTest) {
                 // Break out of the each function.
@@ -46,12 +46,21 @@ $(document).ready(function(){
         return anchorWidths;
     }
 
-    $('.app-menu a').click(function(e) {
+
+    $('.main-menu a').click(function(e) {
         e.preventDefault();
-        $('.app-menu li').removeClass('active');
+        $('.main-menu li').removeClass('active');
         $(this).parents('li').addClass('active');
-        moveMarker();
+        moveMarker('.main-menu');
     });
+
+    $('.shows-menu a').click(function(e) {
+        e.preventDefault();
+        $('.shows-menu li').removeClass('active');
+        $(this).parents('li').addClass('active');
+        moveMarker('.shows-menu');
+    });
+
 
     //simulate loading the cover
     function runExample(){
