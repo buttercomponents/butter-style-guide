@@ -210,6 +210,7 @@ nav.app-menu li {
     line-height: 28px;
     opacity: 0.4;
     text-transform: uppercase;
+    position: relative;
 }
 nav.app-menu li.active {
     opacity: 1;
@@ -227,14 +228,27 @@ nav.app-menu li a {
     display: block;
     padding: 4px 0px;
     margin: 0 20px;
-
     text-decoration: none;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
-nav.app-menu li a:hover {
-    border-bottom-color: #FFF;
-    opacity: 0.8;
+
+nav.app-menu li:hover,nav.app-menu li:hover a {
+    opacity: 1;
+}
+
+nav.app-menu li:hover a::after  {
+    content: " ";
+    background: #FFF;
+    bottom: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    -webkit-transition: all 0.2s cubic-bezier(0.25, 0.25, 0.25, 1.25);
+    transition: all 0.2s cubic-bezier(0.25, 0.25, 0.25, 1.25);
+    width: calc( 100% - 40px );
+    border-radius: 3px;
 }
 nav.app-menu .active-marker {
     background: #FF1744;
