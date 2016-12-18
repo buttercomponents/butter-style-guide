@@ -1,12 +1,8 @@
 $(document).ready(function(){
     function moveMarker() {
         var activeNav = $('.active a');
-        var activewidth = $(activeNav).width();
-        var activePadLeft = parseFloat($(activeNav).css('padding-left'));
-        var activePadRight = parseFloat($(activeNav).css('padding-right'));
-        var totalWidth = activewidth + activePadLeft + activePadRight;
-
-        var precedingAnchorWidth = anchorWidthCounter();
+        var aWidth =  $(activeNav).width();
+        var precedingAnchorWidth =  anchorWidthCounter();
 
         // TODO:
         // Find the total widths of all of the anchors
@@ -15,7 +11,7 @@ $(document).ready(function(){
         var activeMarker = $('.active-marker');
         $(activeMarker).css('display','block');
 
-        $(activeMarker).css('width', totalWidth);
+        $(activeMarker).css('width', aWidth);
 
         $(activeMarker).css('left', precedingAnchorWidth);
 
@@ -29,8 +25,8 @@ $(document).ready(function(){
         var anchorWidths = 0;
         var a;
         var aWidth;
-        var aPadLeft;
-        var aPadRight;
+        var aMarginLeft;
+        var aMarginRight;
         var aTotalWidth;
         $('.app-menu li').each(function(index, elem) {
             var activeTest = $(elem).hasClass('active');
@@ -41,10 +37,9 @@ $(document).ready(function(){
 
             a = $(elem).find('a');
             aWidth = a.width();
-            aPadLeft = parseFloat(a.css('padding-left'));
-            aPadRight = parseFloat(a.css('padding-right'));
-            aTotalWidth = aWidth + aPadLeft + aPadRight;
-
+            aMarginLeft = parseFloat(a.css('margin-left'));
+            aMarginRight = parseFloat(a.css('margin-right'));
+            aTotalWidth = aWidth + aMarginLeft + aMarginRight;
             anchorWidths = anchorWidths + aTotalWidth;
         });
 
