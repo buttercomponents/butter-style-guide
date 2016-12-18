@@ -485,7 +485,7 @@ nav.app-menu.shows-menu .active-marker {
 }
 
 .subtitles .dropdown {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(5, 5, 5, 0.95);
     text-align: left;
     border-radius: 4px;
     position: absolute;
@@ -511,7 +511,7 @@ nav.app-menu.shows-menu .active-marker {
     margin-left: -7px;
     border-width: 7px;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+    border-color: rgba(5, 5, 5, 0.95) transparent transparent transparent;
 }
 
 .subtitles .dropdown .item {
@@ -531,7 +531,7 @@ nav.app-menu.shows-menu .active-marker {
 
 .subtitles .dropdown .item:hover {
     border-left: 4px solid #FF1744;
-    background: rgba(50, 50, 50, 0.5);
+    background: rgba(50, 50, 50, 0.25);
     color: #FFF;
 }
 
@@ -566,6 +566,6 @@ nav.app-menu.shows-menu .active-marker {
 }
 
 .subtitles.active #button {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(5, 5, 5, 0.95);
     border-bottom: 3px solid #FF1744;
 }
