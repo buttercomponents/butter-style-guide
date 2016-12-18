@@ -318,7 +318,7 @@ nav.app-menu.shows-menu .active-marker {
     width: 150px;
     height: 226px;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
-    border-radius: 10px;
+    border-radius: 8px;
     position: relative;
 }
 
@@ -364,7 +364,7 @@ nav.app-menu.shows-menu .active-marker {
     background-image: linear-gradient(-139deg, rgba(255,23,218,0.60) 0%, rgba(255,23,67,0.60) 100%);
     opacity: 0;
     transition: all .3s ease-in-out;
-    border-radius: 10px
+    border-radius: 8px;
 }
 .play-icon{
     color: #FFF;
