@@ -285,9 +285,10 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
  */
 
 .search{
+  position: relative;
   display: inline-block;
   margin:0 20px;
-
+  z-index: 99;
 }
 
 .search .search-input {
@@ -306,12 +307,67 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 }
 
 .search .search-input input[type=text] {
-   background:transparent;
-   border:0;
-   outline:0;
-   width:100px;
-   font-family: Dosis;
+    background:transparent;
+    border:0;
+    outline:0;
+    width:100px;
+    font-family: Dosis;
  }
+
+
+.search .autocomplete{
+    background: #fff;
+    border-radius: 5px;
+    width:100%;
+    position: absolute;
+    top:80%;
+    margin: 10px 0;
+    opacity:0;
+    transition: all 0.2s ease;
+
+}
+
+.search:hover .autocomplete{
+  top: 100%;
+  opacity: 1;
+}
+
+.search .autocomplete .items {
+    margin: 10px;
+    padding: 5px 0;
+}
+.search .autocomplete .items .item {
+    list-style: none;
+    margin:10px 5px;
+}
+
+.search .autocomplete .items .item .info,
+.search .autocomplete .items .item .color{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search .autocomplete .items .item .info {
+  margin: 0 5px;
+}
+.search .autocomplete .items .item .info .title,
+.search .autocomplete .items .item .info .year {
+    color: #252525;
+    font-weight: bold;
+    font-size:18px;
+    margin:0;
+}
+
+.search .autocomplete .items .item .info .year {
+opacity: 0.5;
+font-size:14px;
+}
+
+.search .autocomplete .items .item .color {
+   background: #555;
+   width:25px;
+   height:40px;
+}
 
 /**
  * Movie details
