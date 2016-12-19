@@ -97,4 +97,13 @@ $(document).ready(function(){
         $('#list').toggleClass('active');
     });
 
+    //autocomplete
+    $( "#search-example .search-input input[type=text]" ).focus(function() {
+        $("#search-example" ).addClass('active');
+    });
+
+    $( "#search-example .search-input input[type=text]" ).blur(function() {
+        $("#search-example" ).removeClass('active');
+    });
+
 });

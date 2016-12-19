@@ -327,21 +327,17 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 
 }
 
-.search:hover .autocomplete{
+.search.active .autocomplete{
   transform: translateY(10px);
   opacity: 1;
 }
 
-.search .autocomplete .items {
-
-
-}
 .search .autocomplete .items .item {
     list-style: none;
     padding:10px 5px;
     opacity: 0.75;
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
 }
 
 .search .autocomplete .items .item:hover {
