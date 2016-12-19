@@ -341,7 +341,6 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 }
 .dropdown.search.active .items .item{
     padding: 10px !important;
-    border-bottom: 1px solid #ddd;
 }
 
 .search .search-input input[type=text] {
@@ -407,6 +406,18 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
    margin-left: 5px;
    width: 25px;
    height: 40px;
+}
+
+.search .items .item .color.orange {
+   background:  #ff9800;
+}
+
+.search .items .item .color.blue {
+   background: #42a5f5;
+}
+
+.search .items .item .color.green {
+   background: #4caf50;
 }
 
 /**
@@ -722,6 +733,12 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     background: #EEE;
     opacity: 1;
     cursor: pointer;
+}
+
+
+.dropdown .items li.select {
+    background: #EEE;
+    opacity: 1;
 }
 
 /* fix my mess! */
