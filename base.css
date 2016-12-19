@@ -289,7 +289,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
   display: inline-block;
   margin:0 20px;
   z-index: 99;
-  transition: all 0.2s linear;
+
 }
 
 .search .search-input {
@@ -300,7 +300,10 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 
 .dropdown.search {
     background: transparent!important;
+}
 
+.dropdown.search *{
+      transition: all 0s;
 }
 
 .dropdown.search .search-input {
@@ -309,7 +312,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 
 .dropdown.search .items{
     background: #fff!important;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .dropdown.search.active .search-input {
@@ -352,14 +355,13 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     border-radius: 5px;
     width:100%;
     position: absolute;
-    top:80%;
+    top:100%;
     margin: 10px 0;
     opacity:0;
     transition: all 0.2s ease;
 }
 
 .search.active .autocomplete{
-  transform: translateY(10px);
   opacity: 1;
 }
 
