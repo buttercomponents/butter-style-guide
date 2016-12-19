@@ -108,16 +108,6 @@ $(document).ready(function(){
       selectItem('#dropdown-example', this);
     });
 
-
-    //open dropdown
-    $('#button').click(function () {
-        $('.subtitles').toggleClass('active');
-    });
-    //select language
-    $('.item').click(function () {
-        $('#list').toggleClass('active');
-    });
-
     $( "#dropdown-search-example .search-input input[type=text]" ).focus(function() {
         $("#dropdown-search-example" ).addClass('active');
     });
