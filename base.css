@@ -22,10 +22,12 @@ h3{
 .logo{
     width: 120px;
     display: inline-block;
+    vertical-align: middle;
 }
 .title{
     width: calc(100% - 130px);
     display: inline-block;
+    vertical-align: middle;
 }
 .title h1{
     font-family: Dosis;
