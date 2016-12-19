@@ -84,10 +84,31 @@ $(document).ready(function(){
     }
     runExample();
 
-    //open dropdown
+    //dropdown-example
+    function selectItem(dropdown, item) {
+        var selected = $(dropdown).find(".drop-head .select-item .selected"),
+            items =  $(dropdown).find(" .items li"),
+            text = $(item).text();
+
+            $(selected).text(text);
+            $(dropdown).removeClass('active');
+
+            $(items).each(function (i) {
+                $(this).removeClass('active');
+            });
+
+            $(item).addClass('active');
+    };
+    // open dropdown
     $('#dropdown-example .select-item').click(function () {
         $('#dropdown-example').toggleClass('active');
     });
+    // select item
+    $('#dropdown-example .items li').click(function () {
+      selectItem('#dropdown-example', this);
+    });
+
+
     //open dropdown
     $('#button').click(function () {
         $('.subtitles').toggleClass('active');

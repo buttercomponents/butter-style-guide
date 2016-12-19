@@ -70,6 +70,7 @@ h3{
 .background-disabled{
     background-color: #74767C;
 }
+
 span.info{
     font-size: 20px;
     color: #ffffff;
@@ -78,7 +79,6 @@ span.info{
     text-align: center;
     margin: 0 4px 10px;
 }
-
 
 /**
  * Buttons
@@ -615,11 +615,12 @@ font-size:14px;
     vertical-align: top;
     color: #FFF;
     text-align: left;
+    min-width: 135px;
     margin: 0 20px;
     border-radius:5px;
 }
 
- .dropdown *{
+.dropdown *{
     transition: all 0.15s ease;
 }
 
@@ -681,9 +682,13 @@ font-size:14px;
 
 }
 
+.dropdown .items li.active{
+    display: none;
+}
+
 .dropdown .items  li:last-child {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius:  5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius:  5px;
 }
 
 .dropdown .items li:hover {
