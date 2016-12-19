@@ -384,29 +384,29 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 }
 
 
-.search .autocomplete .items .item .info,
-.search .autocomplete .items .item .color{
+.search .items .item .info,
+.search .items .item .color{
     display: inline-block;
     vertical-align: middle;
 }
 
-.search .autocomplete .items .item .info {
+.search .items .item .info {
   margin: 0 5px;
 }
-.search .autocomplete .items .item .info .title,
-.search .autocomplete .items .item .info .year {
+.search .items .item .info .title,
+.search .items .item .info .year {
     color: #252525;
     font-weight: bold;
     font-size:18px;
     margin:0;
 }
 
-.search .autocomplete .items .item .info .year {
+.search .items .item .info .year {
 opacity: 0.5;
 font-size:14px;
 }
 
-.search .autocomplete .items .item .color {
+.search .items .item .color {
    background: #555;
    margin-left:10px;
    width:25px;
@@ -705,7 +705,7 @@ font-size:14px;
   font-size: 20px;
   font-weight: bold;
   opacity: 0.75;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 0px;
   display: block
 
 }
