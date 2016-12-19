@@ -339,7 +339,10 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 .dropdown.search.active .search-input i.material-icons{
     color: #252525;
 }
-
+.dropdown.search.active .items .item{
+    padding:10px !important;
+    border-bottom: 1px solid #ddd;
+}
 
 .search .search-input input[type=text] {
     background:transparent;
