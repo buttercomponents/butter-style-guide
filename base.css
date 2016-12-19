@@ -342,7 +342,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 
 .search .autocomplete .items .item:hover {
    opacity: 1;
-    background:#EEEEEE;
+   background:#EEEEEE;
 }
 
 .search .autocomplete .items:first-child .item {
@@ -679,6 +679,11 @@ font-size:14px;
   padding: 10px 15px;
   display: block
 
+}
+
+.search .autocomplete .items  li:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:  5px;
 }
 
 .dropdown .items li:hover {
