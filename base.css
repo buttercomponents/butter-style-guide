@@ -681,7 +681,7 @@ font-size:14px;
 
 }
 
-.search .autocomplete .items  li:last-child {
+.dropdown .items  li:last-child {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius:  5px;
 }
