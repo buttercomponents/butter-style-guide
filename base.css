@@ -279,6 +279,40 @@ nav.app-menu.shows-menu li a{
 nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::after   {
     height: 2px;
 }
+
+/**
+ * Base of Styleguide
+ */
+
+.search{
+  display: inline-block;
+  margin:0 20px;
+
+}
+
+.search .search-input {
+  background:  #2c2f38;
+  padding: 4px 15px;
+  border-radius:25px;
+}
+.search .search-input input[type=text],
+.search .search-input i.material-icons {
+    color: #ddd;
+    font-size: 15px;
+}
+
+.search .search-input i.material-icons{
+    color: #6c7483;
+}
+
+.search .search-input input[type=text] {
+   background:transparent;
+   border:0;
+   outline:0;
+   width:100px;
+   font-family: Dosis;
+ }
+
 /**
  * Movie details
  */
