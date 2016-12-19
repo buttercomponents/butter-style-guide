@@ -505,9 +505,80 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
  * Dropdown
  */
 
+
+.dropdown {
+    display: inline-block;
+    vertical-align: bottom;
+    color: #FFF;
+    text-align: left;
+    margin: 0 20px;
+    padding: 15px 20px;
+    border-radius:5px;
+}
+
+
+ .dropdown *{
+    transition: all 0.15s ease;
+}
+
+.dropdown.active {
+  background: #FFF;
+  color: #252525;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.dropdown .category {
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.25;
+}
+
+.dropdown .select-item {
+    cursor: pointer;
+}
+
+.dropdown .selected {
+    font-size: 20px;
+}
+
+.dropdown .selected, .dropdown .icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.dropdown .icon {
+    opacity: 0.5;
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+
+.dropdown.active .icon{
+  color: #252525;
+}
+
+.dropdown .items {
+    display: none;
+}
+.dropdown.active .items {
+    display: inherit;
+}
+
+.dropdown .items li{
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.75;
+  margin-top:20px;
+
+}
+/* fix my mess! */
 .subtitles {
     position: relative;
     display: inline-block;
+    margin: 0 20px;
 }
 
 .subtitles .dropdown {

@@ -84,6 +84,11 @@ $(document).ready(function(){
     }
     runExample();
 
+
+    //open dropdown
+    $('.dropdown .select-item').click(function () {
+        $('.dropdown').toggleClass('active');
+    });
     //open dropdown
     $('#button').click(function () {
         $('.subtitles').toggleClass('active');
