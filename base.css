@@ -501,21 +501,19 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
         background-position: 368px 0;
     }
 }
+
 /**
  * Dropdown
  */
-
-
 .dropdown {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
     color: #FFF;
     text-align: left;
     margin: 0 20px;
     padding: 15px 20px;
     border-radius:5px;
 }
-
 
  .dropdown *{
     transition: all 0.15s ease;
@@ -525,7 +523,6 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
   background: #FFF;
   color: #252525;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
 }
 
 .dropdown .category {
@@ -552,7 +549,6 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     opacity: 0.5;
     font-size: 25px;
     margin-left: 10px;
-
 }
 
 .dropdown.active .icon{
@@ -562,6 +558,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 .dropdown .items {
     display: none;
 }
+
 .dropdown.active .items {
     display: inherit;
 }
@@ -572,16 +569,17 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
   font-weight: bold;
   opacity: 0.75;
   margin-top:20px;
-
 }
+
 /* fix my mess! */
 .subtitles {
     position: relative;
     display: inline-block;
     margin: 0 20px;
+    vertical-align:  top;
 }
 
-.subtitles .dropdown {
+.subtitles .sb-dropdown {
     background-color: rgba(5, 5, 5, 0.95);
     text-align: left;
     border-radius: 4px;
@@ -595,12 +593,12 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     transition: all 0.2s ease;
 }
 
-.subtitles.active .dropdown {
+.subtitles.active .sb-dropdown {
     opacity: 100;
     bottom: 150%;
 }
 
-.subtitles .dropdown::after {
+.subtitles .sb-dropdown::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -611,7 +609,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     border-color: rgba(5, 5, 5, 0.95) transparent transparent transparent;
 }
 
-.subtitles .dropdown .item {
+.subtitles .sb-dropdown .item {
     padding: 8px 10px;
     font-size: 15px;
     width: 100px;
@@ -622,11 +620,11 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     transition: all 0.25s ease;
 }
 
-.subtitles .dropdown .item.active {
+.subtitles .sb-dropdown .item.active {
     border-left: 4px solid #FF1744;
 }
 
-.subtitles .dropdown .item:hover {
+.subtitles .sb-dropdown .item:hover {
     border-left: 4px solid #FF1744;
     background: rgba(50, 50, 50, 0.25);
     color: #FFF;
