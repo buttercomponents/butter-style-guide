@@ -289,6 +289,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
   display: inline-block;
   margin:0 20px;
   z-index: 99;
+  transition: all 0.2s linear;
 }
 
 .search .search-input {
@@ -296,6 +297,23 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
   padding: 4px 15px;
   border-radius:25px;
 }
+
+.dropdown.search {
+    background: transparent!important;
+}
+
+.dropdown.search .items{
+    background: #fff!important;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.dropdown.search.active .search-input {
+    padding: 15px 15px;
+    border-radius:10px 10px 0px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
 .search .search-input input[type=text],
 .search .search-input i.material-icons {
     color: #ddd;
@@ -305,6 +323,17 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 .search .search-input i.material-icons{
     color: #6c7483;
 }
+
+.dropdown.search.active .search-input input[type=text],
+.dropdown.search.active .search-input i.material-icons {
+    color: #181c25;
+    font-size: 15px;
+}
+
+.dropdown.search.active .search-input i.material-icons{
+    color: #252525;
+}
+
 
 .search .search-input input[type=text] {
     background:transparent;
@@ -623,7 +652,7 @@ font-size:14px;
     transition: all 0.15s ease;
 }
 
-.dropdown.active {
+.dropdown.active, .search.active .search-input {
   background: #FFF;
   color: #252525;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);

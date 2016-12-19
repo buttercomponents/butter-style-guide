@@ -106,4 +106,13 @@ $(document).ready(function(){
         $("#search-example" ).removeClass('active');
     });
 
+    $( "#dropdown-search-example .search-input input[type=text]" ).focus(function() {
+        $("#dropdown-search-example" ).addClass('active');
+    });
+
+    $( "#dropdown-search-example .search-input input[type=text]" ).blur(function() {
+        $("#dropdown-search-example" ).removeClass('active');
+    });
+
+
 });
