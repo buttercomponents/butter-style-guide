@@ -300,6 +300,11 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 
 .dropdown.search {
     background: transparent!important;
+
+}
+
+.dropdown.search .search-input {
+    border-radius: 5px;
 }
 
 .dropdown.search .items{
@@ -307,10 +312,8 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     border-radius: 0px 0px 10px 10px;
 }
 
-
 .dropdown.search.active .search-input {
-    padding: 15px 15px;
-    border-radius:10px 10px 0px 0px;
+    border-radius:5px 5px 0px 0px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -353,7 +356,6 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     margin: 10px 0;
     opacity:0;
     transition: all 0.2s ease;
-
 }
 
 .search.active .autocomplete{
@@ -370,19 +372,18 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 }
 
 .search .autocomplete .items .item:hover {
-   opacity: 1;
-   background:#EEEEEE;
+    opacity: 1;
+    background:#EEEEEE;
 }
 
-.search .autocomplete .items:first-child .item {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.search .items:first-child .item {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-.search .autocomplete .items .item:last-child {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius:  5px;
+.search  .items .item:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius:  5px;
 }
-
 
 .search .items .item .info,
 .search .items .item .color{
@@ -408,7 +409,7 @@ font-size:14px;
 
 .search .items .item .color {
    background: #555;
-   margin-left:10px;
+   margin-left:5px;
    width:25px;
    height:40px;
 }
@@ -702,20 +703,19 @@ font-size:14px;
 }
 
 .dropdown .items li{
-  list-style: none;
-  font-size: 20px;
-  font-weight: bold;
-  opacity: 0.75;
-  padding: 10px 15px 10px 0px;
-  display: block
-
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.75;
+    padding: 10px 20px;
+    display: block
 }
 
 .dropdown .items li.active{
     display: none;
 }
 
-.dropdown .items  li:last-child {
+.dropdown .items:last-child li {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius:  5px;
 }
