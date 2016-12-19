@@ -84,16 +84,14 @@ $(document).ready(function(){
     }
     runExample();
 
-
     //open dropdown
-    $('.dropdown .select-item').click(function () {
-        $('.dropdown').toggleClass('active');
+    $('#dropdown-example .select-item').click(function () {
+        $('#dropdown-example').toggleClass('active');
     });
     //open dropdown
     $('#button').click(function () {
         $('.subtitles').toggleClass('active');
     });
-
     //select language
     $('.item').click(function () {
         $('#list').toggleClass('active');
