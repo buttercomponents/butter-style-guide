@@ -656,12 +656,9 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     margin: 0 20px;
     border-radius:5px;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.25);
 }
 
-.dropdown *{
-
-}
 
 .dropdown.active, .search.active .search-input {
   background: #FFF;
@@ -713,7 +710,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     height:0;
     width:100%;
     overflow: hidden;
-    transition: all 0.25s ease;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.25);
 
 }
 .drop-head {
