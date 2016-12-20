@@ -755,17 +755,17 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 }
 
 /* Settings row */
-.dropdown.settings-row.active {
+.dropdown.settings.active {
   border-radius:3px;
 }
 
-.dropdown.settings-row .drop-head {
+.dropdown.settings .drop-head {
     border: 2px solid #FF1744;
     color: #FF1744;
     border-radius:3px;
 }
 
-.dropdown.settings-row.active .drop-head {
+.dropdown.settings.active .drop-head {
     border-top: 2px solid  transparent;
     border-bottom: 1px solid rgba(255, 23, 68, 0.25);
     border-left: 2px solid  transparent;
@@ -773,39 +773,83 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     border-radius:3px 3px 0 0;
 }
 
-.dropdown.settings-row .drop-head i{
+.dropdown.settings .drop-head i{
     color: #FF1744;
 }
 
-.dropdown.settings-row.active .drop-head i{
+.dropdown.settings.active .drop-head i{
     opacity:1;
 }
 
-.dropdown.settings-row .drop-head .selected {
+.dropdown.settings .drop-head .selected {
     width:100px;
 }
 
 
-.dropdown.settings-row .items li{
+.dropdown.settings .items li{
     color: #757575;
 }
 
-.dropdown.settings-row .items li:last-child {
+.dropdown.settings .items li:last-child {
     border-radius: 0 0 2px 2px;
 }
 
-.dropdown.settings-row .items li:hover {
+.dropdown.settings .items li:hover {
     background: #EEE;
 }
 
-.dropdown.settings-row .items li.select {
+.dropdown.settings .items li.select {
     background: #FF1744;
     color: #fff;
 }
 
-.dropdown.settings-row .items li.active {
+.dropdown.settings .items li.active {
     background: #FF1744;
     color: #fff;
     display: block;
     opacity: 1;
+}
+
+/* Row */
+.settings-row{
+    color:#FFF;
+    margin:0;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.settings-row.inactive{
+    color:#FFF;
+    margin:0;
+    display: inline-block;
+    margin:  20px;
+    opacity: 0.45;
+}
+
+.settings-row .text,
+.settings-row i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.settings-row i {
+    font-size:35px;
+    margin:0 20px;
+}
+.settings-row .text .item-title,
+.settings-row .text .helper {
+    margin: 0;
+    padding:0;
+    line-height: 22px;
+}
+
+.settings-row .text .item-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.settings-row .text .helper {
+    opacity:0.5;
+    font-size: 15px;
+    font-weight: normal;
 }
