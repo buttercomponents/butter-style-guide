@@ -305,9 +305,6 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     background: transparent!important;
 }
 
-.dropdown.search *{
-      transition: all 0s;
-}
 
 .dropdown.search .search-input {
     border-radius: 5px;
@@ -363,7 +360,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     top: 100%;
     margin: 10px 0;
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .search.active .autocomplete{
@@ -658,10 +655,12 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     min-width: 135px;
     margin: 0 20px;
     border-radius:5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .dropdown *{
-    transition: all 0.15s ease;
+
 }
 
 .dropdown.active, .search.active .search-input {
@@ -710,7 +709,11 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 
 
 .dropdown .items {
-    display: none;
+  display: block;
+    height:0;
+    width:100%;
+    overflow: hidden;
+    transition: all 0.25s ease;
 
 }
 .drop-head {
@@ -718,11 +721,14 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 }
 
 .dropdown.active .drop-head {
-    border-bottom: 1px solid #ddd;
+
 }
+
 .dropdown.active .items {
     display: inherit;
-    width: 100%;
+    height:145px;
+
+
 }
 
 .dropdown .items li{
@@ -731,7 +737,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     font-weight: bold;
     opacity: 0.75;
     padding: 10px 20px;
-    display: block
+    display: block;
 }
 
 .dropdown .items li.active{
