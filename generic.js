@@ -116,5 +116,15 @@ $(document).ready(function(){
         $("#dropdown-search-example" ).removeClass('active');
     });
 
+    // Row for settings
+    // open dropdown
+    $('#dropdown-row-example .select-item').click(function () {
+        $('#dropdown-row-example').toggleClass('active');
+    });
+    // select item
+    $('#dropdown-row-example .items li').click(function () {
+      selectItem('#dropdown-row-example', this);
+    });
+
 
 });

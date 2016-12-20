@@ -749,7 +749,6 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     cursor: pointer;
 }
 
-
 .dropdown .items li.select {
     background: #EEE;
     opacity: 1;
@@ -759,25 +758,28 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 .dropdown.settings-row.active {
   border-radius:3px;
 }
+
 .dropdown.settings-row .drop-head {
     border: 2px solid #FF1744;
     color: #FF1744;
     border-radius:3px;
 }
+
 .dropdown.settings-row.active .drop-head {
-    border: 0;
+    border-top: 2px solid  transparent;
     border-bottom: 1px solid rgba(255, 23, 68, 0.25);
+    border-left: 2px solid  transparent;
+    border-right: 2px solid  transparent;
     border-radius:3px 3px 0 0;
 }
+
 .dropdown.settings-row .drop-head i{
     color: #FF1744;
 }
 
 .dropdown.settings-row.active .drop-head i{
     opacity:1;
-
 }
-
 
 .dropdown.settings-row .drop-head .selected {
     width:100px;
@@ -794,11 +796,16 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 
 .dropdown.settings-row .items li:hover {
     background: #EEE;
-
-
 }
 
 .dropdown.settings-row .items li.select {
     background: #FF1744;
     color: #fff;
+}
+
+.dropdown.settings-row .items li.active {
+    background: #FF1744;
+    color: #fff;
+    display: block;
+    opacity: 1;
 }
