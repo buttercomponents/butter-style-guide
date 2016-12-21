@@ -47,14 +47,14 @@ $(document).ready(function(){
     }
 
 
-    $('.app-menu a').click(function(e) {
+    $('.app-menu a').on( 'click', function(e) {
         e.preventDefault();
         $('.app-menu li').removeClass('active');
         $(this).parents('li').addClass('active');
         moveMarker('.app-menu');
     });
 
-    $('.shows-menu a').click(function(e) {
+    $('.shows-menu a').on( 'click', function(e) {
         e.preventDefault();
         $('.shows-menu li').removeClass('active');
         $(this).parents('li').addClass('active');
@@ -62,7 +62,7 @@ $(document).ready(function(){
     });
 
 
-        $('#header-menu a').click(function(e) {
+        $('#header-menu a').on( 'click', function(e) {
             e.preventDefault();
             $('#header-menu li').removeClass('active');
             $(this).parents('li').addClass('active');
@@ -107,30 +107,29 @@ $(document).ready(function(){
             $(item).addClass('active');
     };
     // open dropdown
-    $('#dropdown-example .select-item').click(function () {
-        $('#dropdown-example').toggleClass('active');
+    $('.dropdown .select-item').on( 'click', function () {
+        $(this).closest('.dropdown').toggleClass('active');
     });
     // select item
-    $('#dropdown-example .items li').click(function () {
-      selectItem('#dropdown-example', this);
+    $('.dropdown .items li').on( 'click', function () {
+      selectItem($(this).closest('.dropdown'), this);
     });
 
-    $( "#dropdown-search-example .search-input input[type=text]" ).focus(function() {
-        $("#dropdown-search-example" ).addClass('active');
+    $( ".dropdown.search .search-input input[type=text]" ).focus(function() {
+        $(this).closest(".dropdown.search" ).addClass('active');
     });
-
-    $( "#dropdown-search-example .search-input input[type=text]" ).blur(function() {
-        $("#dropdown-search-example" ).removeClass('active');
+    $( ".dropdown.search .search-input input[type=text]" ).blur(function() {
+        $(this).closest(".dropdown.search" ).removeClass('active');
     });
 
     // Row for settings
     // open dropdown
-    $('#dropdown-row-example .select-item').click(function () {
-        $('#dropdown-row-example').toggleClass('active');
+    $('.dropdown.settings .select-item').on( 'click', function () {
+        $(this).closest('.dropdown.settings').addClass('active');
     });
     // select item
-    $('#dropdown-row-example .items li').click(function () {
-      selectItem('#dropdown-row-example', this);
+    $('.dropdown.settings .items li').on( 'click', function () {
+      selectItem($(this).closest('.dropdown.settings'), this);
     });
 
 
