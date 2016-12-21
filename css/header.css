@@ -1,0 +1,4 @@
+/** Header **/
+header #header-menu, header .dropdown {
+    display: inline-block; vertical-align: middle;
+}

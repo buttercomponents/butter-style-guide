@@ -1,0 +1,38 @@
+
+/**
+ * Movie details
+ */
+.movie-title{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.movie-info{
+    opacity: 0.3;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 10px 0;
+    padding: 0;
+}
+.movie-info li{
+    list-style: none;
+    display: inline;
+}
+.movie-info li:not(:last-child):after {
+    content: " \00b7";
+    margin: 0 10px;
+    display: inline-block;
+}
+/*
+.movie-info li:last-child:after {
+    content: none;
+}
+*/
+.movie-description{
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+}

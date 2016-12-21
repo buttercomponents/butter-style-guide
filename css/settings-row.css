@@ -1,0 +1,43 @@
+/* Row */
+.settings-row{
+    color:#FFF;
+    margin:0;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.settings-row.inactive{
+    color:#FFF;
+    margin:0;
+    display: inline-block;
+    margin:  20px;
+    opacity: 0.45;
+}
+
+.settings-row .text,
+.settings-row i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.settings-row i {
+    font-size:35px;
+    margin:0 20px;
+}
+.settings-row .text .item-title,
+.settings-row .text .helper {
+    margin: 0;
+    padding:0;
+    line-height: 22px;
+}
+
+.settings-row .text .item-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.settings-row .text .helper {
+    opacity:0.5;
+    font-size: 15px;
+    font-weight: normal;
+}
