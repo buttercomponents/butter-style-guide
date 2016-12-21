@@ -18,8 +18,9 @@ $(document).ready(function(){
         // Set the left: css value to that number.
     }
 
-    moveMarker('.app-menu');
-    //moveMarker('.shows-menu');
+    moveMarker('.main-menu');
+    moveMarker('.shows-menu');
+    moveMarker('.header-menu');
 
     function anchorWidthCounter(nav) {
         var anchorWidths = 0;
@@ -47,11 +48,11 @@ $(document).ready(function(){
     }
 
 
-    $('.app-menu a').on( 'click', function(e) {
+    $('.main-menu a').on( 'click', function(e) {
         e.preventDefault();
-        $('.app-menu li').removeClass('active');
+        $('.main-menu li').removeClass('active');
         $(this).parents('li').addClass('active');
-        moveMarker('.app-menu');
+        moveMarker('.main-menu');
     });
 
     $('.shows-menu a').on( 'click', function(e) {
@@ -62,11 +63,11 @@ $(document).ready(function(){
     });
 
 
-        $('#header-menu a').on( 'click', function(e) {
+        $('.header-menu a').on( 'click', function(e) {
             e.preventDefault();
-            $('#header-menu li').removeClass('active');
+            $('.header-menu li').removeClass('active');
             $(this).parents('li').addClass('active');
-            moveMarker('#header-menu');
+            moveMarker('.header-menu');
         });
 
     //simulate loading the cover
@@ -122,7 +123,6 @@ $(document).ready(function(){
         $(this).closest(".dropdown.search" ).removeClass('active');
     });
 
-    // Row for settings
     // open dropdown
     $('.dropdown.settings .select-item').on( 'click', function () {
         $(this).closest('.dropdown.settings').addClass('active');
