@@ -18,8 +18,8 @@ $(document).ready(function(){
         // Set the left: css value to that number.
     }
 
-    moveMarker('.main-menu');
-    moveMarker('.shows-menu');
+    moveMarker('.app-menu');
+    //moveMarker('.shows-menu');
 
     function anchorWidthCounter(nav) {
         var anchorWidths = 0;
@@ -47,11 +47,11 @@ $(document).ready(function(){
     }
 
 
-    $('.main-menu a').click(function(e) {
+    $('.app-menu a').click(function(e) {
         e.preventDefault();
-        $('.main-menu li').removeClass('active');
+        $('.app-menu li').removeClass('active');
         $(this).parents('li').addClass('active');
-        moveMarker('.main-menu');
+        moveMarker('.app-menu');
     });
 
     $('.shows-menu a').click(function(e) {
@@ -61,6 +61,13 @@ $(document).ready(function(){
         moveMarker('.shows-menu');
     });
 
+
+        $('#header-menu a').click(function(e) {
+            e.preventDefault();
+            $('#header-menu li').removeClass('active');
+            $(this).parents('li').addClass('active');
+            moveMarker('#header-menu');
+        });
 
     //simulate loading the cover
     function runExample(){

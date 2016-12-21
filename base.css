@@ -753,7 +753,7 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
 }
 
 .dropdown .items li.select {
-    background: #BBB;
+    background: #ddd;
     opacity: 1;
 }
 
@@ -856,3 +856,6 @@ nav.app-menu.shows-menu .active-marker, nav.app-menu.shows-menu li:hover a::afte
     font-size: 15px;
     font-weight: normal;
 }
+
+/** Header **/
+header #header-menu, header .dropdown { display: inline-block; vertical-align: middle;}
