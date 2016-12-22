@@ -24,7 +24,7 @@
 .dropdown .category {
     font-weight: bold;
     font-size: 0.85em;
-    opacity: 0.35;
+    opacity: 0.30;
 }
 
 .dropdown .select-item {
@@ -33,7 +33,7 @@
 
 .dropdown .selected {
     font-size: 1.15em;
-    min-width: 70px;
+    min-width: 62px;
 }
 
 .dropdown .selected,
