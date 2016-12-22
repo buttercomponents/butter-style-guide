@@ -17,6 +17,11 @@ $( document ).ready( function() {
     moveMarker( '.main-menu' );
     moveMarker( '.shows-menu' );
     moveMarker( '.header-menu' );
+    $( window ).resize( function() {
+        moveMarker( '.main-menu' );
+        moveMarker( '.shows-menu' );
+        moveMarker( '.header-menu' );
+    } );
 
     function anchorWidthCounter( nav ) {
         var anchorWidths = 0;
