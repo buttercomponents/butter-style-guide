@@ -2,9 +2,9 @@
 
 section.header-section {
 
-    padding: 100px;
+    padding: 100px 0;
     width: auto;
-    margin:100px 20px;
+    margin: 20px;
 
 }
 
@@ -36,8 +36,15 @@ section.header-section {
 }
 
 
-.header .right, .header .left{
+.header .right{
     display: inline-block;
     float: right;
     margin:0 auto;
 }
+
+ .header .left{
+    display: inline-block;
+    float: left;
+    margin:0 auto;
+}
+
