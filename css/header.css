@@ -36,8 +36,8 @@ section.header-section {
 }
 
 
-.header .right{
-    display
-  float: right;
-margin:0 auto;
+.header .right, .header .left{
+    display: inline-block;
+    float: right;
+    margin:0 auto;
 }
