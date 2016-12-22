@@ -5,16 +5,17 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     color: #FFF;
     text-align: left;
     width: auto;
-    margin-left:10px;
+    margin: 0 0 0 10px;
     border-radius: 5px 5px 0 0;
     transition: all 0.2s ease;
 }
-.dropdown.active{
-    min-width: 120px;
+
+.dropdown.active {
+    min-width: 118px;
 }
 
 .dropdown.active,
@@ -25,9 +26,9 @@
 }
 
 .dropdown .category {
-    font-size: 0.85em;
     font-weight: bold;
-    opacity: 0.25;
+    font-size: 0.85em;
+    opacity: 0.35;
 }
 
 .dropdown .select-item {
@@ -43,7 +44,6 @@
     display: inline-block;
     vertical-align: middle;
     font-weight: bold;
-
 }
 
 .dropdown .icon {
@@ -78,12 +78,12 @@
 }
 
 .drop-head {
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 
 .dropdown.active .items {
     background: #fff;
-    height: 120px;
+    height: 111px;
 }
 
 .dropdown.active .items li {
@@ -92,7 +92,7 @@
 
 .dropdown .items li {
     list-style: none;
-    font-size: 1.15em;
+    font-size: 1em;
     font-weight: bold;
     opacity: 0;
     padding: 8px 20px;
