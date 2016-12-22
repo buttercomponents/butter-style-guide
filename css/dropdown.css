@@ -14,10 +14,6 @@
     transition: all 0.2s ease;
 }
 
-.dropdown.active {
-    min-width: 118px;
-}
-
 .dropdown.active,
 .search.active .search-input {
     background: #FFF;
@@ -33,12 +29,11 @@
 
 .dropdown .select-item {
     cursor: pointer;
-
 }
 
 .dropdown .selected {
     font-size: 1.15em;
-      min-width:70px;
+    min-width: 70px;
 }
 
 .dropdown .selected,

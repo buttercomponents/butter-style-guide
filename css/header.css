@@ -11,7 +11,7 @@ section.header-section {
     align-items: center;
     position: relative;
     width: 100%;
-    min-width:960px;
+    min-width: 960px;
     height: 75px;
     margin: 0;
     color: #fff;
@@ -27,9 +27,13 @@ section.header-section {
     vertical-align: middle;
 }
 
+.header .icons {
+    margin-right: 20px;
+}
+
 .header .icons i {
     cursor: pointer;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .header .right {
@@ -41,4 +45,17 @@ section.header-section {
 .header .left {
     display: inline-block;
     float: left;
+}
+
+.header .header-menu li a i.material-icons {
+    display: none;
+}
+
+@media only screen and (max-width: 975px) {
+    .header .header-menu li a span {
+        display: none;
+    }
+    .header .header-menu li a i.material-icons {
+        display: inherit;
+    }
 }
