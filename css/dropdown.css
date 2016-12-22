@@ -11,7 +11,7 @@
     min-width: 135px;
     margin: 0 20px;
     border-radius:5px 5px 0 0;
-    transition: background 0.3s ease;
+    transition: background 0.2s ease;
 }
 
 
@@ -64,14 +64,12 @@
     top: 100%;
     display: block;
     height:0;
-    background:#fff;
     width:100%;
     margin:0;
     padding:0;
-    opacity:0;
     border-radius: 0 0 5px 5px;
     overflow: hidden;
-    transition: height 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.5), opacity 0.3s ease;
+    transition: height 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.5), background 0.2s ease;
 }
 
 .drop-head {
@@ -79,17 +77,23 @@
 }
 
 .dropdown.active .items {
+    background:#fff;
     height: 138px;
-    opacity: 1;
+}
+
+.dropdown.active .items li{
+  opacity: 0.75;
+
 }
 
 .dropdown .items li{
     list-style: none;
     font-size: 20px;
     font-weight: bold;
-    opacity: 0.75;
+    opacity: 0;
     padding: 10px 20px;
     display: block;
+    transition: opacity 0.15s ease;
 }
 
 .dropdown .items li.active{
@@ -101,7 +105,7 @@
     border-bottom-left-radius:  5px;
 }
 
-.dropdown .items li:hover {
+.dropdown.active .items li:hover {
     background: #EEE;
     opacity: 1;
     cursor: pointer;
@@ -152,16 +156,16 @@
     border-radius: 0 0 2px 2px;
 }
 
-.dropdown.settings .items li:hover {
+.dropdown.settings.active .items li:hover {
     background: #EEE;
 }
 
-.dropdown.settings .items li.select {
+.dropdown.settings.active .items li.select {
     background: #FF1744;
     color: #fff;
 }
 
-.dropdown.settings .items li.active {
+.dropdown.settings.active .items li.active {
     background: #FF1744;
     color: #fff;
     display: block;
