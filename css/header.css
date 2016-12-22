@@ -9,7 +9,8 @@ section.header-section {
 }
 
 .header {
-    display: inline-block;
+      display: flex;
+  align-items: center;
     position: relative;
     width:100%;
     height:75px;
@@ -22,8 +23,7 @@ section.header-section {
 
 .header .header-menu,
 .header .dropdown,
-.header .icons,
-.header .left {
+.header .icons {
     display: inline-block;
     vertical-align: middle;
 }
@@ -37,10 +37,7 @@ section.header-section {
 
 
 .header .right{
-  position: absolute;
-  top:25%;
-  bottom:0;
-  right: 0;
+    display
+  float: right;
 margin:0 auto;
-text-align: right;
 }
