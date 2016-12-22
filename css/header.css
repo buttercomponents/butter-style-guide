@@ -1,25 +1,30 @@
 /** Header **/
+
 section.header-section {
-  text-align: center;
-  margin:50px auto;;
-  padding-bottom:200px;
-  width: auto;
+    text-align: center;
+    margin: 50px auto;
+    padding-bottom: 200px;
+    width: auto;
 }
+
 .header {
-  display: inline-block;
-  text-align: center;
-  margin:0 auto;
-  color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
 }
+
 .header .header-menu,
 .header .dropdown,
 .header .icons {
     display: inline-block;
     vertical-align: middle;
 }
-.header .header-menu{
-  font-size:10px;
+
+.header .header-menu {
+    font-size: 10px;
 }
-.header .icons i{
-    margin:0 20px;
+
+.header .icons i {
+    margin: 0 20px;
 }

@@ -11,42 +11,52 @@
 /**
  * App Generic
  */
- body{
+
+body {
     font-family: Dosis;
     background: #191c28;
 }
-section, header {
+
+section,
+header {
     margin: 40px auto;
     width: 920px;
     clear: both;
 }
-h3{
+
+h3 {
     font-size: 48px;
     font-weight: bold;
     line-height: 60px;
     color: #FFFFFF;
 }
+
+
 /**
  * Base of Styleguide
  */
-.logo{
+
+.logo {
     width: 120px;
     display: inline-block;
     vertical-align: middle;
 }
-.title{
+
+.title {
     width: calc(100% - 130px);
     display: inline-block;
     vertical-align: middle;
 }
-.title h1{
+
+.title h1 {
     font-family: Dosis;
     font-size: 36px;
     font-weight: bold;
     line-height: 46px;
     color: #FFFFFF;
 }
-.sub-header{
+
+.sub-header {
     opacity: 0.4;
     font-size: 20px;
     line-height: 26px;
@@ -55,21 +65,24 @@ h3{
     font-weight: 500;
 }
 
-.background-white{
+.background-white {
     background-color: #FFFFFF;
 }
-.background-outline{
+
+.background-outline {
     opacity: 0.4;
     border: 3px solid #ffffff
 }
-.background-primary{
+
+.background-primary {
     background-color: #FF1744;
 }
-.background-disabled{
+
+.background-disabled {
     background-color: #74767C;
 }
 
-span.info{
+span.info {
     font-size: 20px;
     color: #ffffff;
     display: inline-block;

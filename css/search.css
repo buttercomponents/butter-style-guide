@@ -1,18 +1,18 @@
 /**
  * Search
  */
-.search{
-  position: relative;
-  display: inline-block;
-  margin: 0 20px;
-  z-index: 99;
 
+.search {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    z-index: 99;
 }
 
 .search .search-input {
-  background:  #2c2f38;
-  padding: 4px 15px;
-  border-radius: 25px;
+    background: #2c2f38;
+    padding: 4px 15px;
+    border-radius: 25px;
 }
 
 .dropdown.search {
@@ -23,10 +23,10 @@
     border-radius: 5px;
 }
 
-.dropdown.search .items{
+.dropdown.search .items {
     background: #fff!important;
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius:  5px;
+    border-bottom-left-radius: 5px;
 }
 
 .dropdown.search.active .search-input {
@@ -40,7 +40,7 @@
     font-size: 15px;
 }
 
-.search .search-input i.material-icons{
+.search .search-input i.material-icons {
     color: #6c7483;
 }
 
@@ -50,10 +50,11 @@
     font-size: 15px;
 }
 
-.dropdown.search.active .search-input i.material-icons{
+.dropdown.search.active .search-input i.material-icons {
     color: #252525;
 }
-.dropdown.search.active .items .item{
+
+.dropdown.search.active .items .item {
     padding: 10px !important;
 }
 
@@ -63,9 +64,9 @@
     outline: 0;
     width: 100px;
     font-family: Dosis;
- }
+}
 
-.search .autocomplete{
+.search .autocomplete {
     background: #fff;
     border-radius: 5px;
     width: 100%;
@@ -76,8 +77,8 @@
     transition: all 0.3s ease;
 }
 
-.search.active .autocomplete{
-  opacity: 1;
+.search.active .autocomplete {
+    opacity: 1;
 }
 
 .search .autocomplete .items .item {
@@ -94,7 +95,7 @@
 }
 
 .search .items .item .info,
-.search .items .item .color{
+.search .items .item .color {
     display: inline-block;
     vertical-align: middle;
 }
@@ -102,6 +103,7 @@
 .search .items .item .info {
     margin: 0 5px;
 }
+
 .search .items .item .info .title,
 .search .items .item .info .year {
     color: #252525;
@@ -112,24 +114,24 @@
 
 .search .items .item .info .year {
     opacity: 0.5;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .search .items .item .color {
-   background: #555;
-   margin-left: 5px;
-   width: 25px;
-   height: 40px;
+    background: #555;
+    margin-left: 5px;
+    width: 25px;
+    height: 40px;
 }
 
 .search .items .item .color.orange {
-   background:  #ff9800;
+    background: #ff9800;
 }
 
 .search .items .item .color.blue {
-   background: #42a5f5;
+    background: #42a5f5;
 }
 
 .search .items .item .color.green {
-   background: #4caf50;
+    background: #4caf50;
 }
