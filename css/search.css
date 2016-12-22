@@ -10,9 +10,11 @@
 }
 
 .search .search-input {
+    display: inline-block;
     background: #2c2f38;
     padding: 4px 15px;
     border-radius: 25px;
+    height:auto;
 }
 
 .dropdown.search {

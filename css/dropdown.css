@@ -8,10 +8,13 @@
     vertical-align: top;
     color: #FFF;
     text-align: left;
-    min-width: 135px;
-    margin: 0 20px;
+    width: auto;
+    margin-left:10px;
     border-radius: 5px 5px 0 0;
-    transition: background 0.2s ease;
+    transition: all 0.2s ease;
+}
+.dropdown.active{
+    min-width: 120px;
 }
 
 .dropdown.active,
@@ -22,7 +25,7 @@
 }
 
 .dropdown .category {
-    font-size: 14px;
+    font-size: 0.85em;
     font-weight: bold;
     opacity: 0.25;
 }
@@ -32,7 +35,7 @@
 }
 
 .dropdown .selected {
-    font-size: 20px;
+    font-size: 1.15em;
 }
 
 .dropdown .selected,
@@ -40,11 +43,12 @@
     display: inline-block;
     vertical-align: middle;
     font-weight: bold;
+
 }
 
 .dropdown .icon {
     opacity: 0.5;
-    font-size: 25px;
+    font-size: 1.25em;
     margin-left: 10px;
 }
 
@@ -79,7 +83,7 @@
 
 .dropdown.active .items {
     background: #fff;
-    height: 138px;
+    height: 120px;
 }
 
 .dropdown.active .items li {
@@ -88,10 +92,10 @@
 
 .dropdown .items li {
     list-style: none;
-    font-size: 20px;
+    font-size: 1.15em;
     font-weight: bold;
     opacity: 0;
-    padding: 10px 20px;
+    padding: 8px 20px;
     display: block;
     transition: opacity 0.15s ease;
 }
