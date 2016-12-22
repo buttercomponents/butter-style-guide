@@ -39,12 +39,12 @@ section.header-section {
 .header .right{
     display: inline-block;
     float: right;
-    margin:0 auto;
+    margin-left: auto;
 }
 
  .header .left{
     display: inline-block;
     float: left;
-    margin:0 auto;
+
 }
 
