@@ -3,7 +3,7 @@
 section.header-section {
     padding-bottom: 200px;
     width: auto;
-    margin: 20px;
+    margin: 10px;
 }
 
 .header {
@@ -51,7 +51,7 @@ section.header-section {
     display: none;
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1020px) {
     .header .header-menu li a span {
         display: none;
     }
