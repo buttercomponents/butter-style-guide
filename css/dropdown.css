@@ -33,10 +33,12 @@
 
 .dropdown .select-item {
     cursor: pointer;
+
 }
 
 .dropdown .selected {
     font-size: 1.15em;
+      min-width:70px;
 }
 
 .dropdown .selected,
