@@ -12,9 +12,9 @@
 .search .search-input {
     border-radius: 50px;
     margin: 0;
-    transition: all .2s ease;
     height: auto;
     padding: 4px 0;
+      transition: background .2s ease;
 }
 
 .search:hover .search-input {
@@ -52,7 +52,7 @@
 
 .search.active .items {
     opacity: 1;
-    height: auto;
+    height: 192px;
 }
 
 .search.active .search-input input[type=text] {
@@ -80,7 +80,7 @@
     background: #fff;
     list-style: none;
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: height 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.5), background 0.2s ease;
 }
 
 .search .items .item {
