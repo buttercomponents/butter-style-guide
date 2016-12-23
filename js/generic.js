@@ -17,11 +17,12 @@ $( document ).ready( function() {
     moveMarker( '.main-menu' );
     moveMarker( '.shows-menu' );
     moveMarker( '.header-menu' );
-    $( window ).resize( function() {
+    var moveMarkers = debounce( function() {
         moveMarker( '.main-menu' );
         moveMarker( '.shows-menu' );
         moveMarker( '.header-menu' );
-    } );
+    }, 250 );
+    window.addEventListener( 'resize', moveMarkers );
 
     function anchorWidthCounter( nav ) {
         var anchorWidths = 0;
