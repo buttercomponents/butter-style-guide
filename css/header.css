@@ -3,7 +3,12 @@
 section.header-section {
     padding-bottom: 200px;
     width: auto;
-    margin: 10px;
+}
+
+section.header-section h3{
+  width: 960px;
+  padding-left:20px;
+  margin: 50px auto;
 }
 
 .header {
@@ -57,7 +62,7 @@ section.header-section {
     display: none;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1080px) {
     .header .header-menu li a span {
         display: none;
     }

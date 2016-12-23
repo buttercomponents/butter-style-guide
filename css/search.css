@@ -17,7 +17,7 @@
       transition: background .2s ease;
 }
 
-.search:hover .search-input {
+.search.open .search-input {
     padding: 4px 15px;
     background: #2c2f38;
 }
@@ -39,7 +39,7 @@
     color: #fff;
 }
 
-.search:hover .search-input input[type=text] {
+.search.open .search-input input[type=text] {
     width: 100px;
 }
 

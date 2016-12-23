@@ -104,6 +104,9 @@ $( document ).ready( function() {
     $( '.dropdown .items li' ).on( 'click', function() {
         selectItem( $( this ).closest( '.dropdown' ), this );
     } );
+    $( ".search .search-input i" ).on( 'click', function() {
+        $( this ).closest( ".search" ).toggleClass( 'open' );
+    } );
     $( ".search .search-input input[type=text]" ).focus( function() {
         $( this ).closest( ".search" ).addClass( 'active' );
     } );
