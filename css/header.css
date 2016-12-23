@@ -1,15 +1,14 @@
 /** Header **/
 
 section.header-section {
-    padding-bottom: 200px;
+    padding-bottom: 500px;
     width: auto;
-
 }
 
-section.header-section h3{
-  width: 960px;
-  padding-left:20px;
-  margin: 50px auto;
+section.header-section h3 {
+    width: 960px;
+    padding-left: 20px;
+    margin: 50px auto;
 }
 
 .header {
@@ -21,7 +20,7 @@ section.header-section h3{
     height: 75px;
     margin: 0;
     color: #fff;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 5px;
     vertical-align: middle;
 }
@@ -37,14 +36,16 @@ section.header-section h3{
     margin-right: 20px;
 }
 
-.header .icons i, .header .search i{
+.header .icons i,
+.header .search i {
     cursor: pointer;
     margin: 0 15px;
     opacity: 0.5;
     transition: all 0.2s ease;
 }
 
-.header .icons i:hover, .header .search i:hover {
+.header .icons i:hover,
+.header .search i:hover {
     opacity: 1;
 }
 

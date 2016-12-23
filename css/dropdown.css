@@ -11,7 +11,7 @@
     width: auto;
     margin: 0 0 0 10px;
     border-radius: 5px 5px 0 0;
-    transition: all 0.2s ease;
+    transition: background 0.3s ease;
 }
 
 .dropdown.active,
@@ -62,24 +62,30 @@
 
 .dropdown .items {
     position: absolute;
-    top: 100%;
-    display: block;
-    height: 0;
+    display: inline-block;
+    vertical-align: top;
+    max-height: 0;
     width: 100%;
-    margin: 0;
-    padding: 0;
     border-radius: 0 0 5px 5px;
     overflow: hidden;
-    transition: height 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.5), background 0.2s ease;
+    -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+    -webkit-transform-origin: 50% 0;
+    transition: max-height 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), background 0.3s ease;
 }
 
 .drop-head {
-    padding: 5px 15px;
+    padding: 5px 15px
+}
+
+.dropdown.active. .drop-head {
+    background: #fff;
 }
 
 .dropdown.active .items {
     background: #fff;
-    height: 111px;
+    max-height: 283px;
+    overflow: auto;
+    -webkit-transform: perspective(400) rotate3d(1, 0, 0, 0);
 }
 
 .dropdown.active .items li {
@@ -91,7 +97,7 @@
     font-size: 1em;
     font-weight: bold;
     opacity: 0;
-    padding: 8px 20px;
+    padding: 7px 13px;
     display: block;
     transition: opacity 0.15s ease;
 }
