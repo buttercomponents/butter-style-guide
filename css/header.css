@@ -60,15 +60,8 @@ section.header-section h3 {
     float: left;
 }
 
-.header .header-menu li a i.material-icons {
-    display: none;
-}
+
 
 @media only screen and (max-width: 1080px) {
-    .header .header-menu li a span {
-        display: none;
-    }
-    .header .header-menu li a i.material-icons {
-        display: inherit;
-    }
+
 }
