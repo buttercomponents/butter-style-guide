@@ -103,11 +103,11 @@ $( document ).ready( function() {
     $( '.dropdown .items li' ).on( 'click', function() {
         selectItem( $( this ).closest( '.dropdown' ), this );
     } );
-    $( ".dropdown.search .search-input input[type=text]" ).focus( function() {
-        $( this ).closest( ".dropdown.search" ).addClass( 'active' );
+    $( ".search .search-input input[type=text]" ).focus( function() {
+        $( this ).closest( ".search" ).addClass( 'active' );
     } );
-    $( ".dropdown.search .search-input input[type=text]" ).blur( function() {
-        $( this ).closest( ".dropdown.search" ).removeClass( 'active' );
+    $( ".search .search-input input[type=text]" ).blur( function() {
+        $( this ).closest( ".search" ).removeClass( 'active' );
     } );
     // open dropdown
     $( '.dropdown.settings .select-item' ).on( 'click', function() {

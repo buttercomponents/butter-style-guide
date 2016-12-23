@@ -31,7 +31,7 @@ section.header-section {
     margin-right: 20px;
 }
 
-.header .icons i {
+.header .icons i, .header .search {
     cursor: pointer;
     margin: 0 15px;
 }
