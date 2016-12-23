@@ -44,7 +44,7 @@
 }
 
 .search.active .search-input {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
     border-bottom: 1px solid #ddd;
     background: #fff;
     padding: 4px 15px;
@@ -71,7 +71,7 @@
 .search .items {
     overflow: hidden;
     background: #fff;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 5px 5px;
     height: 0;
     width: 100%;
     position: absolute;
