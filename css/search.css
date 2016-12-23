@@ -10,58 +10,54 @@
 }
 
 .search .search-input {
-  border-radius:50px;
-  padding:0;
-  margin:0;
-  transition: all .2s ease;
-  height:auto;
+    border-radius: 50px;
+    margin: 0;
+    transition: all .2s ease;
+    height: auto;
+    padding: 4px 0;
 }
 
-.search:hover .search-input{
-   padding: 4px 15px;
-  background: #2c2f38;
-
+.search:hover .search-input {
+    padding: 4px 15px;
+    background: #2c2f38;
 }
 
-.search .search-input input[type=text]{
-  width:0;
-  display: inline-block;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  transition: all 0.2s ease;
-}
-.search .search-input input[type=text], .search-input i.material-icons{
-display: inline-block;
-margin:0;
-  vertical-align: middle;
-  color:#fff;
-
+.search .search-input input[type=text] {
+    width: 0;
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    transition: all 0.2s ease;
 }
 
-.search:hover .search-input input[type=text]{
-
-width: 100px;
+.search .search-input input[type=text],
+.search-input i.material-icons {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    color: #fff;
 }
 
-
+.search:hover .search-input input[type=text] {
+    width: 100px;
+}
 
 .search.active .search-input {
     border-radius: 15px 15px 0px 0px;
     border-bottom: 1px solid #ddd;
-  background: #fff;
+    background: #fff;
+    padding: 4px 15px;
 }
 
-
-.search.active .items{
-    opacity:1;
+.search.active .items {
+    opacity: 1;
     height: auto;
 }
 
-
-.search.active .search-input input[type=text]{
+.search.active .search-input input[type=text] {
     color: #181c25;
-    width:100px;
+    width: 100px;
 }
 
 .search.active .search-input i.material-icons {
@@ -72,24 +68,20 @@ width: 100px;
     padding: 10px !important;
 }
 
-.search .items{
+.search .items {
     overflow: hidden;
     background: #fff;
     border-radius: 0 0 10px 10px;
-    height:0;
+    height: 0;
     width: 100%;
     position: absolute;
     top: 100%;
-    margin:0;
-    background:#fff;
+    margin: 0;
+    background: #fff;
     list-style: none;
     opacity: 0;
     transition: all 0.3s ease;
-
 }
-
-
-
 
 .search .items .item {
     list-style: none;
@@ -99,7 +91,7 @@ width: 100px;
     transition: all 0.2s ease;
 }
 
-.search  .items .item:hover {
+.search .items .item:hover {
     opacity: 1;
     background: #EEEEEE;
 }
