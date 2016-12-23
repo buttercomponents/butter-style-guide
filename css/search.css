@@ -19,7 +19,7 @@
 
 .search.open .search-input {
     padding: 4px 15px;
-    background: #2c2f38;
+    background: rgba(0,0,0,0.25);
 }
 
 .search .search-input input[type=text] {

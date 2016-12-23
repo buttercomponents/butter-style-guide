@@ -3,6 +3,7 @@
 section.header-section {
     padding-bottom: 200px;
     width: auto;
+
 }
 
 section.header-section h3{
@@ -20,7 +21,7 @@ section.header-section h3{
     height: 75px;
     margin: 0;
     color: #fff;
-    border: 1px solid #74767C;
+    border: 1px solid rgba(255,255,255,0.15);
     border-radius: 5px;
     vertical-align: middle;
 }
