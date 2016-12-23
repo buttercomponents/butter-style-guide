@@ -31,9 +31,15 @@ section.header-section {
     margin-right: 20px;
 }
 
-.header .icons i, .header .search {
+.header .icons i, .header .search i{
     cursor: pointer;
     margin: 0 15px;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+
+.header .icons i:hover, .header .search i:hover {
+    opacity: 1;
 }
 
 .header .right {
