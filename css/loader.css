@@ -41,10 +41,21 @@
     stroke: #FF1744;
     animation-name: load;
     animation-duration: 3s;
-    /*animation-iteration-count: infinite;*/
+    animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease;
+    /* webkit */
+    -webkit-animation-name: load;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-direction: alternate-reverse;
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease;
+    -webkit-animation-name: load;
+    /* moz */
+    -moz-animation-duration: 3s;
+    -moz-animation-direction: alternate-reverse;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease;
 }
 
 @-webkit-keyframes 
