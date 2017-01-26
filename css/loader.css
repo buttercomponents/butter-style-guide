@@ -40,9 +40,9 @@
     stroke-dasharray: 629;
     stroke: #FF1744;
     animation-name: load;
-    animation-duration: 2s;
+    animation-duration: 3s;
     /*animation-iteration-count: infinite;*/
-    animation-direction: normal;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease;
     -webkit-animation-timing-function: ease;
 }
