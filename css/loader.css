@@ -30,7 +30,9 @@
     width: 10rem;
     height: 10rem;
 }
-
+.progress svg:nth-child(1) path{
+    stroke: rgba(0, 0, 0, 0.5);
+}
 .progress svg:nth-child(2) {
     position: absolute;
     left: 0;
@@ -45,7 +47,7 @@
     fill: none;
     stroke-width: 10;
     stroke-dasharray: 629;
-    stroke: rgba(255, 255, 255, 0.9);
+    stroke: #FF1744;
     -webkit-animation: load 10s;
     -moz-animation: load 10s;
     -o-animation: load 10s;
