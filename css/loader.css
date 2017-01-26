@@ -52,3 +52,17 @@
     animation: load 10s;
 }
 
+@-webkit-keyframes 
+    load {
+            0% { stroke-dashoffset:0 }
+    }
+
+@-moz-keyframes 
+    load {
+            0% { stroke-dashoffset:0 }
+    }
+@keyframes 
+    load {
+            0% {    stroke-dashoffset:0 }
+    }
+
