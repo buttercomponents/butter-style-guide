@@ -39,10 +39,12 @@
     stroke-width: 10;
     stroke-dasharray: 629;
     stroke: #FF1744;
-    -webkit-animation: load 10s;
-    -moz-animation: load 10s;
-    -o-animation: load 10s;
-    animation: load 10s;
+    -webkit-animation: load 1s;
+    -moz-animation: load 1s;
+    -o-animation: load 1s;
+    animation: load 1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes 
