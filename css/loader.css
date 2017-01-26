@@ -2,18 +2,8 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    color: #93A2AC;
-    font-family: Lato;
-    font-weight: 100;
+    color: #FFF;
     margin: 2rem;
-}
-
-.progress > li:before {
-    content: attr(data-name);
-    position: absolute;
-    width: 100%;
-    bottom: -2rem;
-    font-weight: 400;
 }
 
 .progress > li:after {
