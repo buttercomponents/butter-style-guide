@@ -40,11 +40,11 @@
     stroke-dasharray: 629;
     stroke: #FF1744;
     animation-name: load;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    /*animation-iteration-count: infinite;*/
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
 }
 
 @-webkit-keyframes 
