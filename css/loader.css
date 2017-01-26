@@ -42,7 +42,7 @@
     animation-name: load;
     animation-duration: 2s;
     /*animation-iteration-count: infinite;*/
-    animation-direction: reverse;
+    animation-direction: normal;
     animation-timing-function: ease;
     -webkit-animation-timing-function: ease;
 }
